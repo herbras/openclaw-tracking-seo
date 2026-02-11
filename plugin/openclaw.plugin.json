@@ -1,0 +1,48 @@
+{
+  "id": "clarity-tracker",
+  "configSchema": {
+    "type": "object",
+    "additionalProperties": false,
+    "required": ["clarityApiToken", "clarityProjectId"],
+    "properties": {
+      "clarityApiToken": {
+        "type": "string",
+        "description": "Microsoft Clarity API token (Settings > Data Export)"
+      },
+      "clarityProjectId": {
+        "type": "string",
+        "description": "Clarity project ID"
+      },
+      "projectName": {
+        "type": "string",
+        "default": "My Website",
+        "description": "Human-readable project name"
+      },
+      "siteUrl": {
+        "type": "string",
+        "description": "Full site URL for PageSpeed checks (e.g. https://yourdomain.com)"
+      },
+      "gscCredentialsFile": {
+        "type": "string",
+        "description": "Path to Google Search Console service account JSON"
+      },
+      "gscSiteUrl": {
+        "type": "string",
+        "description": "GSC site URL (e.g. sc-domain:yourdomain.com)"
+      },
+      "bingApiKey": {
+        "type": "string",
+        "description": "Bing Webmaster Tools API key (Settings > API Access)"
+      }
+    }
+  },
+  "uiHints": {
+    "clarityApiToken": { "label": "Clarity API Token", "sensitive": true },
+    "clarityProjectId": { "label": "Clarity Project ID", "placeholder": "1234567890" },
+    "projectName": { "label": "Project Name", "placeholder": "yourdomain.com" },
+    "siteUrl": { "label": "Site URL", "placeholder": "https://yourdomain.com" },
+    "gscCredentialsFile": { "label": "GSC Credentials File", "placeholder": "./gsc_credentials.json" },
+    "gscSiteUrl": { "label": "GSC Site URL", "placeholder": "sc-domain:yourdomain.com" },
+    "bingApiKey": { "label": "Bing API Key", "sensitive": true, "placeholder": "your-bing-api-key" }
+  }
+}

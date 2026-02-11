@@ -1,0 +1,9 @@
+{
+  "name": "clarity-tracker",
+  "version": "1.0.0",
+  "description": "OpenClaw plugin to track Microsoft Clarity analytics",
+  "openclaw": {
+    "extensions": ["./src/index.ts"]
+  },
+  "dependencies": {}
+}
