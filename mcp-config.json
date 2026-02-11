@@ -1,0 +1,26 @@
+{
+  "mcpServers": {
+    "clarity-analytic": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "@microsoft/clarity-mcp-server"
+      ],
+      "env": {
+        "CLARITY_API_TOKEN": "YOUR_API_TOKEN_HERE"
+      },
+      "autoStart": true
+    },
+    "bing-webmaster": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "@isiahw1/mcp-server-bing-webmaster@latest"
+      ],
+      "env": {
+        "BING_WEBMASTER_API_KEY": "YOUR_BING_API_KEY_HERE"
+      },
+      "autoStart": true
+    }
+  }
+}

@@ -1,0 +1,7 @@
+.env
+.clarity_cache/
+reports/
+.venv/
+__pycache__/
+*.pyc
+node_modules/
